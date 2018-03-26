@@ -58,3 +58,9 @@ $door = DoorFactory::makeDoor(100, 200);
 echo 'Width:' . $door->getWidth();
 echo PHP_EOL;
 echo 'Height:' . $door->getHeight();
+
+/*
+*何时使用？
+*如果创建对象不仅仅是一些变量的初始化，还涉及某些逻辑，
+*那么将其封装到一个专用工厂中取代随处使用的重复代码是有意义的。
+*/
